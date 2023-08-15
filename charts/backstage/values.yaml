@@ -33,6 +33,10 @@ upstream:
           connection:
             password: ${POSTGRESQL_ADMIN_PASSWORD}
             user: postgres
+    integrations:
+    github:
+      - host: github.com
+        token: ${GITHUB_TOKEN}
     extraEnvVars:
     - name: POSTGRESQL_ADMIN_PASSWORD
       valueFrom:
