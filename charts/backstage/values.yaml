@@ -87,7 +87,7 @@ route:
   enabled: true
 
   # -- Set the host attribute to a custom value. If not set, OpenShift will generate it, please make sure to match your baseUrl
-  host: "{{ .Values.global.host }}"
+  host: "janus-janus.apps.ocp410-dev.cloudlet-dev.com"
 
   # -- Path that the router watches for, to route traffic for to the service.
   path: "/"
