@@ -42,8 +42,8 @@ upstream:
     - name: GITHUB_TOKEN
       valueFrom:
         secretKeyRef:
-        key: GITHUB_TOKEN
-        name: "test-token"
+          key: GITHUB_TOKEN
+          name: "test-token"
 
   postgresql:
     enabled: true
