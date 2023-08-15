@@ -39,6 +39,11 @@ upstream:
         secretKeyRef:
           key: postgres-password
           name: "{{ .Release.Name }}-postgresql"
+    - name: GITHUB_TOKEN
+      valueFrom:
+        secretKeyRef:
+        key: GITHUB_TOKEN
+        name: "test-token"
 
   postgresql:
     enabled: true
